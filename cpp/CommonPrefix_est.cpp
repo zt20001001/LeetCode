@@ -4,7 +4,7 @@
 #include "iostream"
 #include "vector"
 using namespace std;
-
+//最长公共前缀函数
 string longestCommonPrefix(vector<string>& str){
     int minlength=str[0].size();
     int count = str.size();
@@ -14,19 +14,25 @@ string longestCommonPrefix(vector<string>& str){
         }
     }
     string string1="";
-    for(int i=0;i<minlength;i++){
-        char c= str[0][i];
-        bool flag=false;
-        for(int j=1;j<count;j++){
-            if(str[j][i]==c){
-                flag=true;
+    if(str.size()==1){
+        string1=str[0];
+    }else{
+        for (int i = 0; i < minlength; i++) {
+            char c = str[0][i];
+            bool flag = false;
+            for (int j = 1; j < count; j++) {
+                if (str[j][i] == c) {
+                    flag = true;
+                } else {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) {
+                string1.push_back(c);
             }else{
-                flag= false;
                 break;
             }
-        }
-        if(flag){
-            string1.push_back(c);
         }
     }
     return string1;
