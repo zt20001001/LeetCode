@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/C++(CL)/LeetCode/cpp/CommonPrefix_est.cpp
+iostream
+D:/C++(CL)/LeetCode/cpp/iostream
+vector
+D:/C++(CL)/LeetCode/cpp/vector
+
