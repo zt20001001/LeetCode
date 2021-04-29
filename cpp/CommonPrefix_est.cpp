@@ -4,6 +4,19 @@
 #include "iostream"
 #include "vector"
 using namespace std;
+
+/*
+ * 测试用例完整版
+ * 1. 输入：str = ["flower","flow","flight"]
+ *    输出："fl"
+ * 2. 输入：str = ["dog","racer","car"]
+ *    输出：""
+ * 3. 输入：str = ["a"]
+ *    输出："a"
+ * 4. 输入：str = ["car","cir"]
+ *    输出："c"
+ */
+
 //最长公共前缀函数
 string longestCommonPrefix(vector<string>& str){
     int minlength=str[0].size();

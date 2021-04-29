@@ -129,17 +129,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LeetCode
+# Target rules for targets named commonPrefix
 
 # Build rule for target.
-LeetCode: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LeetCode
-.PHONY : LeetCode
+commonPrefix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 commonPrefix
+.PHONY : commonPrefix
 
 # fast build rule for target.
-LeetCode/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LeetCode.dir\build.make CMakeFiles/LeetCode.dir/build
-.PHONY : LeetCode/fast
+commonPrefix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonPrefix.dir\build.make CMakeFiles/commonPrefix.dir/build
+.PHONY : commonPrefix/fast
 
 #=============================================================================
 # Target rules for targets named RomanToInt
@@ -153,6 +153,126 @@ RomanToInt: cmake_check_build_system
 RomanToInt/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RomanToInt.dir\build.make CMakeFiles/RomanToInt.dir/build
 .PHONY : RomanToInt/fast
+
+#=============================================================================
+# Target rules for targets named ValidBrackets
+
+# Build rule for target.
+ValidBrackets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ValidBrackets
+.PHONY : ValidBrackets
+
+# fast build rule for target.
+ValidBrackets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ValidBrackets.dir\build.make CMakeFiles/ValidBrackets.dir/build
+.PHONY : ValidBrackets/fast
+
+#=============================================================================
+# Target rules for targets named RemoveDuplicates
+
+# Build rule for target.
+RemoveDuplicates: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RemoveDuplicates
+.PHONY : RemoveDuplicates
+
+# fast build rule for target.
+RemoveDuplicates/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RemoveDuplicates.dir\build.make CMakeFiles/RemoveDuplicates.dir/build
+.PHONY : RemoveDuplicates/fast
+
+#=============================================================================
+# Target rules for targets named GradeRank
+
+# Build rule for target.
+GradeRank: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 GradeRank
+.PHONY : GradeRank
+
+# fast build rule for target.
+GradeRank/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GradeRank.dir\build.make CMakeFiles/GradeRank.dir/build
+.PHONY : GradeRank/fast
+
+cpp/CommonPrefix_est.obj: cpp/CommonPrefix_est.cpp.obj
+
+.PHONY : cpp/CommonPrefix_est.obj
+
+# target to build an object file
+cpp/CommonPrefix_est.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonPrefix.dir\build.make CMakeFiles/commonPrefix.dir/cpp/CommonPrefix_est.cpp.obj
+.PHONY : cpp/CommonPrefix_est.cpp.obj
+
+cpp/CommonPrefix_est.i: cpp/CommonPrefix_est.cpp.i
+
+.PHONY : cpp/CommonPrefix_est.i
+
+# target to preprocess a source file
+cpp/CommonPrefix_est.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonPrefix.dir\build.make CMakeFiles/commonPrefix.dir/cpp/CommonPrefix_est.cpp.i
+.PHONY : cpp/CommonPrefix_est.cpp.i
+
+cpp/CommonPrefix_est.s: cpp/CommonPrefix_est.cpp.s
+
+.PHONY : cpp/CommonPrefix_est.s
+
+# target to generate assembly for a file
+cpp/CommonPrefix_est.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonPrefix.dir\build.make CMakeFiles/commonPrefix.dir/cpp/CommonPrefix_est.cpp.s
+.PHONY : cpp/CommonPrefix_est.cpp.s
+
+cpp/GradeRank.obj: cpp/GradeRank.cpp.obj
+
+.PHONY : cpp/GradeRank.obj
+
+# target to build an object file
+cpp/GradeRank.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GradeRank.dir\build.make CMakeFiles/GradeRank.dir/cpp/GradeRank.cpp.obj
+.PHONY : cpp/GradeRank.cpp.obj
+
+cpp/GradeRank.i: cpp/GradeRank.cpp.i
+
+.PHONY : cpp/GradeRank.i
+
+# target to preprocess a source file
+cpp/GradeRank.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GradeRank.dir\build.make CMakeFiles/GradeRank.dir/cpp/GradeRank.cpp.i
+.PHONY : cpp/GradeRank.cpp.i
+
+cpp/GradeRank.s: cpp/GradeRank.cpp.s
+
+.PHONY : cpp/GradeRank.s
+
+# target to generate assembly for a file
+cpp/GradeRank.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GradeRank.dir\build.make CMakeFiles/GradeRank.dir/cpp/GradeRank.cpp.s
+.PHONY : cpp/GradeRank.cpp.s
+
+cpp/RemoveDuplicates.obj: cpp/RemoveDuplicates.cpp.obj
+
+.PHONY : cpp/RemoveDuplicates.obj
+
+# target to build an object file
+cpp/RemoveDuplicates.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RemoveDuplicates.dir\build.make CMakeFiles/RemoveDuplicates.dir/cpp/RemoveDuplicates.cpp.obj
+.PHONY : cpp/RemoveDuplicates.cpp.obj
+
+cpp/RemoveDuplicates.i: cpp/RemoveDuplicates.cpp.i
+
+.PHONY : cpp/RemoveDuplicates.i
+
+# target to preprocess a source file
+cpp/RemoveDuplicates.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RemoveDuplicates.dir\build.make CMakeFiles/RemoveDuplicates.dir/cpp/RemoveDuplicates.cpp.i
+.PHONY : cpp/RemoveDuplicates.cpp.i
+
+cpp/RemoveDuplicates.s: cpp/RemoveDuplicates.cpp.s
+
+.PHONY : cpp/RemoveDuplicates.s
+
+# target to generate assembly for a file
+cpp/RemoveDuplicates.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RemoveDuplicates.dir\build.make CMakeFiles/RemoveDuplicates.dir/cpp/RemoveDuplicates.cpp.s
+.PHONY : cpp/RemoveDuplicates.cpp.s
 
 cpp/RomanToInt.obj: cpp/RomanToInt.cpp.obj
 
@@ -181,32 +301,32 @@ cpp/RomanToInt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RomanToInt.dir\build.make CMakeFiles/RomanToInt.dir/cpp/RomanToInt.cpp.s
 .PHONY : cpp/RomanToInt.cpp.s
 
-main.obj: main.cpp.obj
+cpp/ValidBrackets.obj: cpp/ValidBrackets.cpp.obj
 
-.PHONY : main.obj
+.PHONY : cpp/ValidBrackets.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LeetCode.dir\build.make CMakeFiles/LeetCode.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+cpp/ValidBrackets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ValidBrackets.dir\build.make CMakeFiles/ValidBrackets.dir/cpp/ValidBrackets.cpp.obj
+.PHONY : cpp/ValidBrackets.cpp.obj
 
-main.i: main.cpp.i
+cpp/ValidBrackets.i: cpp/ValidBrackets.cpp.i
 
-.PHONY : main.i
+.PHONY : cpp/ValidBrackets.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LeetCode.dir\build.make CMakeFiles/LeetCode.dir/main.cpp.i
-.PHONY : main.cpp.i
+cpp/ValidBrackets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ValidBrackets.dir\build.make CMakeFiles/ValidBrackets.dir/cpp/ValidBrackets.cpp.i
+.PHONY : cpp/ValidBrackets.cpp.i
 
-main.s: main.cpp.s
+cpp/ValidBrackets.s: cpp/ValidBrackets.cpp.s
 
-.PHONY : main.s
+.PHONY : cpp/ValidBrackets.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LeetCode.dir\build.make CMakeFiles/LeetCode.dir/main.cpp.s
-.PHONY : main.cpp.s
+cpp/ValidBrackets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ValidBrackets.dir\build.make CMakeFiles/ValidBrackets.dir/cpp/ValidBrackets.cpp.s
+.PHONY : cpp/ValidBrackets.cpp.s
 
 # Help Target
 help:
@@ -216,14 +336,26 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... LeetCode
+	@echo ... GradeRank
+	@echo ... RemoveDuplicates
 	@echo ... RomanToInt
+	@echo ... ValidBrackets
+	@echo ... commonPrefix
+	@echo ... cpp/CommonPrefix_est.obj
+	@echo ... cpp/CommonPrefix_est.i
+	@echo ... cpp/CommonPrefix_est.s
+	@echo ... cpp/GradeRank.obj
+	@echo ... cpp/GradeRank.i
+	@echo ... cpp/GradeRank.s
+	@echo ... cpp/RemoveDuplicates.obj
+	@echo ... cpp/RemoveDuplicates.i
+	@echo ... cpp/RemoveDuplicates.s
 	@echo ... cpp/RomanToInt.obj
 	@echo ... cpp/RomanToInt.i
 	@echo ... cpp/RomanToInt.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... cpp/ValidBrackets.obj
+	@echo ... cpp/ValidBrackets.i
+	@echo ... cpp/ValidBrackets.s
 .PHONY : help
 
 

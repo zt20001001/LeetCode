@@ -71,8 +71,11 @@ CMAKE_BINARY_DIR = D:\C++(CL)\LeetCode\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LeetCode.dir/all
+all: CMakeFiles/commonPrefix.dir/all
 all: CMakeFiles/RomanToInt.dir/all
+all: CMakeFiles/ValidBrackets.dir/all
+all: CMakeFiles/RemoveDuplicates.dir/all
+all: CMakeFiles/GradeRank.dir/all
 
 .PHONY : all
 
@@ -82,37 +85,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/LeetCode.dir/clean
+clean: CMakeFiles/commonPrefix.dir/clean
 clean: CMakeFiles/RomanToInt.dir/clean
+clean: CMakeFiles/ValidBrackets.dir/clean
+clean: CMakeFiles/RemoveDuplicates.dir/clean
+clean: CMakeFiles/GradeRank.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LeetCode.dir
+# Target rules for target CMakeFiles/commonPrefix.dir
 
 # All Build rule for target.
-CMakeFiles/LeetCode.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LeetCode.dir\build.make CMakeFiles/LeetCode.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LeetCode.dir\build.make CMakeFiles/LeetCode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target LeetCode"
-.PHONY : CMakeFiles/LeetCode.dir/all
+CMakeFiles/commonPrefix.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonPrefix.dir\build.make CMakeFiles/commonPrefix.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonPrefix.dir\build.make CMakeFiles/commonPrefix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target commonPrefix"
+.PHONY : CMakeFiles/commonPrefix.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LeetCode.dir/rule: cmake_check_build_system
+CMakeFiles/commonPrefix.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LeetCode.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/commonPrefix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/LeetCode.dir/rule
+.PHONY : CMakeFiles/commonPrefix.dir/rule
 
 # Convenience name for target.
-LeetCode: CMakeFiles/LeetCode.dir/rule
+commonPrefix: CMakeFiles/commonPrefix.dir/rule
 
-.PHONY : LeetCode
+.PHONY : commonPrefix
 
 # clean rule for target.
-CMakeFiles/LeetCode.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LeetCode.dir\build.make CMakeFiles/LeetCode.dir/clean
-.PHONY : CMakeFiles/LeetCode.dir/clean
+CMakeFiles/commonPrefix.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonPrefix.dir\build.make CMakeFiles/commonPrefix.dir/clean
+.PHONY : CMakeFiles/commonPrefix.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/RomanToInt.dir
@@ -121,7 +127,7 @@ CMakeFiles/LeetCode.dir/clean:
 CMakeFiles/RomanToInt.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RomanToInt.dir\build.make CMakeFiles/RomanToInt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RomanToInt.dir\build.make CMakeFiles/RomanToInt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target RomanToInt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target RomanToInt"
 .PHONY : CMakeFiles/RomanToInt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -140,6 +146,87 @@ RomanToInt: CMakeFiles/RomanToInt.dir/rule
 CMakeFiles/RomanToInt.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RomanToInt.dir\build.make CMakeFiles/RomanToInt.dir/clean
 .PHONY : CMakeFiles/RomanToInt.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ValidBrackets.dir
+
+# All Build rule for target.
+CMakeFiles/ValidBrackets.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ValidBrackets.dir\build.make CMakeFiles/ValidBrackets.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ValidBrackets.dir\build.make CMakeFiles/ValidBrackets.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target ValidBrackets"
+.PHONY : CMakeFiles/ValidBrackets.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ValidBrackets.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ValidBrackets.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/ValidBrackets.dir/rule
+
+# Convenience name for target.
+ValidBrackets: CMakeFiles/ValidBrackets.dir/rule
+
+.PHONY : ValidBrackets
+
+# clean rule for target.
+CMakeFiles/ValidBrackets.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ValidBrackets.dir\build.make CMakeFiles/ValidBrackets.dir/clean
+.PHONY : CMakeFiles/ValidBrackets.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RemoveDuplicates.dir
+
+# All Build rule for target.
+CMakeFiles/RemoveDuplicates.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RemoveDuplicates.dir\build.make CMakeFiles/RemoveDuplicates.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RemoveDuplicates.dir\build.make CMakeFiles/RemoveDuplicates.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target RemoveDuplicates"
+.PHONY : CMakeFiles/RemoveDuplicates.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RemoveDuplicates.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RemoveDuplicates.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/RemoveDuplicates.dir/rule
+
+# Convenience name for target.
+RemoveDuplicates: CMakeFiles/RemoveDuplicates.dir/rule
+
+.PHONY : RemoveDuplicates
+
+# clean rule for target.
+CMakeFiles/RemoveDuplicates.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RemoveDuplicates.dir\build.make CMakeFiles/RemoveDuplicates.dir/clean
+.PHONY : CMakeFiles/RemoveDuplicates.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/GradeRank.dir
+
+# All Build rule for target.
+CMakeFiles/GradeRank.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GradeRank.dir\build.make CMakeFiles/GradeRank.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GradeRank.dir\build.make CMakeFiles/GradeRank.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target GradeRank"
+.PHONY : CMakeFiles/GradeRank.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GradeRank.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/GradeRank.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\C++(CL)\LeetCode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/GradeRank.dir/rule
+
+# Convenience name for target.
+GradeRank: CMakeFiles/GradeRank.dir/rule
+
+.PHONY : GradeRank
+
+# clean rule for target.
+CMakeFiles/GradeRank.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GradeRank.dir\build.make CMakeFiles/GradeRank.dir/clean
+.PHONY : CMakeFiles/GradeRank.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
